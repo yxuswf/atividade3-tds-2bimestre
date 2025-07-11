@@ -1,0 +1,36 @@
+programa
+{
+  funcao inicio()
+  {
+    caracter letra
+
+    escreva("Digite uma letra: ")
+    leia(letra)
+
+
+    se (letra == 'a' ou letra == 'e' ou letra == 'i' ou letra == 'o' ou letra == 'u'){
+      escreva("A letra ", letra, " é uma vogal.")
+    } 
+    		senao{
+      		escreva("A letra ", letra, " é uma consoante.")
+    		}
+
+    //atividade dos anos bissextos
+    inteiro ano, anoAtual = 2024
+
+    escreva("\nDigite um ano: ")
+    leia(ano)
+
+    se (ano <= 0) {
+      ano = anoAtual
+    }
+
+    se ((ano % 4 == 0 e ano % 100 != 0) ou (ano % 400 == 0)){
+      escreva("O ano ", ano, " é bissexto.")
+    } 
+    		senao {
+     	 	escreva("O ano ", ano, " não é bissexto.")
+    		}
+  
+  }
+}
